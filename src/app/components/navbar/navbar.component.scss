@@ -1,0 +1,83 @@
+@import '/src/scss/variables';
+
+.ps__navbar {
+    padding: $gutter*4 $gutter*4 0 $gutter*4;
+    
+    background: $white;
+    
+    -moz-box-shadow: 0 4px 4px rgba(150,150,150,.3);
+    -webkit-box-shadow: 0 4px 4px rgba(150,150,150,.3);
+    box-shadow: 0 4px 4px rgba(150,150,150,.3);
+}
+.ps__navbar_wrap {
+    display: grid;
+    grid-template-areas: 
+        'logo logo logo social'
+        'menu menu menu menu';
+
+    row-gap: 8px
+}
+.ps__navbar_logo {
+    grid-area: logo;
+
+    max-width: 153px;
+    max-height: 32px;
+
+    margin: 0 $gutter*2;
+}
+.ps__navbar_menu {
+    grid-area: menu;
+    
+    display: flex;
+    align-items: center;
+    gap: $gutter*2;
+
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0! important;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+    li a {
+        display: inline-block;
+
+        padding: $gutter*3 $gutter*2;
+        
+        color: $mineShaft;
+    }
+}
+.ps__navbar_social {
+    grid-area: social;
+    
+    display: flex;
+    justify-content: end;
+    grid: $gutter*2;
+
+    li a {
+        display: inline-block;
+
+        padding: $gutter*3;
+        
+        color: $mineShaft;
+    }
+}
+
+
+/*
+  LARGE DEVICES
+*/
+@media (min-width: 768px) {
+    .ps__navbar {
+        padding: $gutter*4;
+    }
+    .ps__navbar_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ps__navbar_menu {
+        overflow: initial;
+    }
+}
