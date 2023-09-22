@@ -1,0 +1,9 @@
+@import '/src/scss/_variables';
+
+.ps__card {
+    width: auto;
+    max-width: 270px;
+    height: 100%;
+
+    padding: $gutter;
+}
