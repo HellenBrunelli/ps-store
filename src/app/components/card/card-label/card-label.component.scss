@@ -1,0 +1,21 @@
+@import '/src/scss/variables';
+
+.ps__card_flag {
+    display: block;
+   
+    margin: $gutter*2 0;
+   
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: $black;
+    text-transform: uppercase;
+   
+    opacity: 0.6;
+}
+.ps__card_name {
+    margin: $gutter*3 0;
+   
+    font-size: 20px;
+    font-weight: 600;
+    color: $black;
+}
