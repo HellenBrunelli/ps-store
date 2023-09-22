@@ -1,0 +1,35 @@
+@import '/src/scss/variables';
+
+.ps__card_image {
+    position: relative;
+    
+    width: 100%;
+    max-width: 270px;//??
+    height: 270px;
+
+    img {
+        width: 100%;
+        height: auto;
+        
+        border-radius: 7px;
+    }
+}
+
+.ps__card_versions {
+    position: absolute;
+    bottom: $gutter*5;
+    left: $gutter*3;
+    
+    display: flex;
+    gap: $gutter;
+
+    li {
+        padding: $gutter/2;
+
+        font-size: 12px;
+        color: $white;
+
+        background-color: rgba(18,19,20,.6);
+        border: solid 1px $white;
+    }
+}
