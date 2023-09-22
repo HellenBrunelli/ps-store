@@ -1,0 +1,22 @@
+/*Colors*/
+$white: #FFFFFF;
+$offWhite: #f5f5f5;
+$mineShaft: #1F1F1F;
+$endeavour: #065BAA;
+$scienceClue: #0072CE;
+$silver: #C4C4C4;
+$mineShaft: #383838;
+
+/* Shadows */
+$darkBlueShadow: 0px 0px 15px 0px #0072CE;
+
+
+
+/* Container Variable */
+$containerSize: 76rem;
+@media (min-width:768px) {
+    $containerSize: 1rem;
+}
+
+/* Spacing Variables */
+$gutter: 0.25rem;
