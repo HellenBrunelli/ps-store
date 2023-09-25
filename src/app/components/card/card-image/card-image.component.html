@@ -1,11 +1,12 @@
 <div class="ps__card_image">
     <img 
-        src="https://image.api.playstation.com/vulcan/ap/rnd/202208/1716/5xfqTHyQNpwviv22iIKDAxjp.png?w=440&thumb=false" 
-        alt=""
+        src="{{imageUrl}}" 
+        alt="{{imageAlt}}"
     >
     <ul class="ps__card_versions">
-        <li>PS5</li>
-        <li>PS4</li>
+        <li *ngFor="let version of versions">
+            {{version}}
+        </li>
     </ul>
 </div>
 

@@ -1,10 +1,14 @@
 <div class="ps__card_price">
     <span class="ps__card_flag">
-        -50%
+        {{discountPercentage()}}%
     </span>
 
     <p class="ps__card_prices">
-        <span class="ps__card_value ps__card_discount-price">R$ 244,93</span>
-        <span class="vps__card_value ps__card_total-price">R$ 349,90</span>
+        <span class="ps__card_value ps__card_discount-price">
+            {{ discountPrice | currency:'BRL':'symbol':'1.2-2' }}
+        </span>
+        <span class="vps__card_value ps__card_total-price">
+            {{ totalPrice | currency:'BRL':'symbol':'1.2-2' }}
+        </span>
     </p>
 </div>

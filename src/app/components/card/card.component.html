@@ -1,7 +1,21 @@
-<article class="ps__card">
-    <a href="">
-        <app-card-image></app-card-image>
-        <app-card-label></app-card-label>
-        <app-card-price></app-card-price>
+<div class="ps__card">
+    <a href="#">
+        <app-card-image
+            imageUrl="{{imageUrl}}"
+            imageAlt="{{imageAlt}}" 
+            [versions]="versions"       
+        ></app-card-image>
+
+
+        <app-card-label
+            type="{{type}}"
+            name="{{name}}"
+        ></app-card-label>
+
+
+        <app-card-price
+            [totalPrice]="totalPrice"
+            [discountPrice]="discountPrice"
+        ></app-card-price>
     </a>
-</article>
+</div>

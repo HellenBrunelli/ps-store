@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-price',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardPriceComponent implements OnInit {
 
+  @Input()
+  totalPrice: number = 0
+  @Input()
+  discountPrice: number = 0
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  discountPercentage(): number {
+    const discount = ((this.totalPrice - this.discountPrice) / this.totalPrice) * 100;
+    return Math.floor(discount)
+  }
 }

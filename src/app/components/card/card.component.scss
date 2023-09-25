@@ -1,9 +1,11 @@
 @import '/src/scss/_variables';
 
 .ps__card {
-    width: auto;
-    max-width: 270px;
-    height: 100%;
+    width: 100%;
 
     padding: $gutter;
+    transition: filter .8s;
+}
+.ps__card:hover {
+    filter: brightness(80%);
 }

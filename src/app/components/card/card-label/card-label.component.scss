@@ -15,7 +15,8 @@
 .ps__card_name {
     margin: $gutter*3 0;
    
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: $black;
+    min-height: 4.375rem;
 }
