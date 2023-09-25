@@ -1,6 +1,25 @@
 <main class="ps__home">
-    <div class="container">
-        <app-card></app-card>
+    <div class="container wrap">
+        <app-card
+        imageUrl="https://image.api.playstation.com/vulcan/ap/rnd/202208/1716/5xfqTHyQNpwviv22iIKDAxjp.png?w=440&thumb=false"
+        imageAlt="Hogowarts" 
+        [versions]="['PS5', 'PS4']" 
+        type="Pacote do jogo"
+        name="Hogwarts Legacy: Edição Digital Deluxe"
+        [totalPrice]="100.00"
+        [discountPrice]="80.00"
+        
+        ></app-card>
+
+        <app-card
+        imageUrl="https://image.api.playstation.com/vulcan/ap/rnd/202205/2800/W5uSEsW7yefCNTHatS03v5q7.png?w=440"
+        imageAlt="Call of Duty" 
+        [versions]="['PS4', 'PS3']" 
+        type="Edição premium"
+        name="Call of Duty®: Modern Warfare® II - Pacote Multigeração"
+        [totalPrice]="130.52"
+        [discountPrice]="80.52"
+        ></app-card>
     </div>
 </main>
 
