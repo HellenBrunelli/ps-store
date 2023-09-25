@@ -1,7 +1,11 @@
 @import '/src/scss/variables';
 
-.ps__navbar_social {
+:host {
+    display: grid;
     grid-area: social;
+}
+
+.ps__navbar_social {
     
     display: flex;
     justify-content: flex-end;

@@ -1,7 +1,11 @@
 @import '/src/scss/variables';
 
-.ps__navbar_menu {
+:host {
+    display: grid;
     grid-area: menu;
+}
+
+.ps__navbar_menu {
     
     display: flex;
     align-items: center;
