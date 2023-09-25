@@ -1,0 +1,10 @@
+@import '/src/scss/variables';
+
+.ps__navbar_logo {
+    grid-area: logo;
+
+    max-width: 153px;
+    max-height: 32px;
+
+    margin: 0 $gutter*2;
+}
