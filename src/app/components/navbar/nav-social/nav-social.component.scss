@@ -1,0 +1,17 @@
+@import '/src/scss/variables';
+
+.ps__navbar_social {
+    grid-area: social;
+    
+    display: flex;
+    justify-content: end;
+    grid: $gutter*2;
+
+    li a {
+        display: inline-block;
+
+        padding: $gutter*3;
+        
+        color: $mineShaft;
+    }
+}
